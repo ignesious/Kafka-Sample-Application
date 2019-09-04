@@ -1,1 +1,13 @@
-Service: ap-fds-receiving-delta-error-handling
+
+
+#  ISSUES ABOVE
+#
+##Issue 1: if both binders point to two different eventhub in single cluster either one of them will be selected as group coordinator which is not correct which needs to be addressed.
+##
+#
+#
+#ISSUE 2:- if two eventhubs are not in cluster but dedicated ones then authorization issue
+#
+#OBSERVATION :- if two binder and configured to point localhost kafka instance they work as expected. The above given is a working example where one is eventhub and other is localhost
+
+#so two different coordinators are selected.
